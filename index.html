@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Chatting Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <aside class="sidebar">
+        <header class="sidebar-header">
+          <h1>ChatApp</h1>
+        </header>
+        <div class="user-list">
+          <h3>Online Users</h3>
+          <ul id="users">
+            <!-- Online users will be listed here -->
+          </ul>
+        </div>
+      </aside>
+      <section class="chat-section">
+        <header class="chat-header">
+          <h2>Chat Room</h2>
+          <div id="typing-indicator" class="typing-indicator"></div>
+        </header>
+        <main class="chat-messages" id="chat-messages">
+          <!-- chat messages will be displayed here -->
+        </main>
+        <footer class="chat-input">
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Type a message..."
+            autocomplete="off"
+          />
+          <button id="send-btn">Send</button>
+        </footer>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
