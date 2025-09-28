@@ -387,3 +387,103 @@ body {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 360px) {
+  /* Very small mobile (e.g., budget Androids like entry-level Realme/Redmi) */
+  .sidebar {
+    width: 180px;
+  }
+
+  .chat-header {
+    padding: 15px;
+  }
+
+  .chat-header h2 {
+    font-size: 0.9rem;
+  }
+
+  .sidebar-toggle {
+    font-size: 1.3rem;
+  }
+
+  .message .avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .user-list .avatar {
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
+
+  .message-content {
+    max-width: 95%;
+    padding: 6px 10px;
+  }
+
+  .message-text {
+    font-size: 0.85rem;
+  }
+
+  .chat-input {
+    padding: 12px;
+    gap: 6px;
+  }
+
+  #message-input {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+    min-height: 40px;
+  }
+
+  #send-btn {
+    padding: 10px 15px;
+    font-size: 0.85rem;
+    min-width: 50px;
+    min-height: 40px;
+  }
+
+  .user-list {
+    padding: 15px;
+  }
+
+  .user-list h3 {
+    font-size: 0.9rem;
+  }
+
+  .user-list li {
+    padding: 8px 0;
+  }
+}
+
+/* Landscape orientation for mobiles */
+@media (max-width: 768px) and (orientation: landscape) {
+  .app-container {
+    height: 100vh;
+  }
+
+  .chat-messages {
+    padding: 10px;
+  }
+
+  .chat-input {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #eee;
+    z-index: 10;
+  }
+
+  .chat-section {
+    padding-bottom: 70px; /* Space for fixed input */
+  }
+
+  .sidebar {
+    height: 100vh;
+  }
+}
