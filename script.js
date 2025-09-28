@@ -146,6 +146,11 @@ sidebarToggle.addEventListener("click", () => {
   sidebar.classList.toggle("open");
 });
 
+const sidebarClose = document.getElementById("sidebar-close");
+sidebarClose.addEventListener("click", () => {
+  sidebar.classList.remove("open");
+});
+
 // Initialize
 displayUsers();
 loadMessages();
