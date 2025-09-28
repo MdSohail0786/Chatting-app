@@ -4,6 +4,8 @@ const sendBtn = document.getElementById("send-btn");
 const chatMessages = document.getElementById("chat-messages");
 const usersList = document.getElementById("users");
 const typingIndicator = document.getElementById("typing-indicator");
+const sidebar = document.querySelector(".sidebar");
+const sidebarToggle = document.getElementById("sidebar-toggle");
 
 // User data
 const currentUser = { name: "You", avatar: "Y" };
@@ -138,6 +140,10 @@ messageInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     sendMessage();
   }
+});
+
+sidebarToggle.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
 });
 
 // Initialize
